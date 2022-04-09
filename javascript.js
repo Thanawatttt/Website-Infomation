@@ -1,5 +1,3 @@
-let windowW = window.innerWidth;
-let windowH = window.innerHeight;
 let isLoaded = false;
 let glitch;
 let imgSrc =
@@ -7,7 +5,7 @@ let imgSrc =
 
 function setup() {
     background(0);
-    var canvas = createCanvas(windowW, windowH);
+    var canvas = createCanvas(window.innerWidth, window.innerHeight);
     loadImage(imgSrc, function (img) {
         glitch = new Glitch(img);
         isLoaded = true;
@@ -283,6 +281,13 @@ class Glitch {
     }
 }
 
+window.addEventListener('resize', function(event){
+	var element = document.getElementById("defaultCanvas0")
+	if(element !== undefined) {
+		console.log(element.remove())
+  	    setup()
+	}
+});
 document.addEventListener("click", musicPlay);
 function musicPlay() {
     var song = document.getElementById("song");
