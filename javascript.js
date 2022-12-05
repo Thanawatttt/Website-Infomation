@@ -3,7 +3,7 @@ let windowH = window.innerHeight;
 let isLoaded = false;
 let glitch;
 let imgSrc =
-"https://cdn.discordapp.com/attachments/912948733413560320/1049220849409994832/Minecraft-Wallpaper-1.jpg"
+"https://c4.wallpaperflare.com/wallpaper/226/682/452/minecraft-waterfall-video-games-wallpaper-preview.jpg"
 
 function setup() {
     background(0);
