@@ -3,7 +3,7 @@ let windowH = window.innerHeight;
 let isLoaded = false;
 let glitch;
 let imgSrc =
-    "http://m.gettywallpapers.com/wp-content/uploads/2020/05/Minecraft-Wallpaper-1.jpg"
+"https://cdn.discordapp.com/attachments/912948733413560320/1049220849409994832/Minecraft-Wallpaper-1.jpg"
 
 function setup() {
     background(0);
